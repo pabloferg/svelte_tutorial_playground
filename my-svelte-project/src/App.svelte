@@ -44,7 +44,7 @@
 
 
 <div class="antialiased text-gray-900">
-    <div class="bg-gray-800 text- text-center text-white ">
+    <div class="bg-gray-800  text-white ">
      <NavBar/>
     </div>
 
