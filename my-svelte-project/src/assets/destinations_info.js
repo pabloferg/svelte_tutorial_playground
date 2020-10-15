@@ -1,14 +1,4 @@
-<link rel='stylesheet' href='/index.css'>
-
-<script>
-
-    import BasicCard from './components/BasicCard.svelte';
-    import NavBar from './components/NavBar.svelte';
-
-
-    import Counter from './Counter.svelte';
-
-    let destinations =  [
+export let destinations =  [
             {
         "image_url" : "https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
         "image_alt" : "plane in forest",
@@ -33,35 +23,5 @@
         "card_price" : "£4384",
         "discounted" : true
     }
-]
 
-
-
-
-
-</script>
-
-
-
-<div class="antialiased text-gray-900">
-    <div class="bg-gray-800 text- text-center text-white ">
-     <NavBar/>
-    </div>
-
-    <p>Hola! Welcome to my page.</p>
-
-    <div class="bg-gray-200 min-h-screen p-0  items-center justify-center">
-
-        {#each destinations as destination}
-            <div class='p-5'>
-            <BasicCard destination={destination}/>
-            </div>
-        {/each}
-
-
-    </div>
-
-
-
-</div>
-
+    ]
