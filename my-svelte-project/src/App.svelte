@@ -37,7 +37,7 @@
 
 
 
-
+    let show_menu = true
 
 </script>
 
@@ -45,10 +45,9 @@
 
 <div class="antialiased text-gray-900">
     <div class="bg-gray-800  text-white ">
-     <NavBar/>
+     <NavBar show_menu={show_menu}/>
     </div>
 
-    <p>Hola! Welcome to my page.</p>
 
     <div class="bg-gray-200 min-h-screen p-0  items-center justify-center">
 
