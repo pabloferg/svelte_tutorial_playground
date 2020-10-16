@@ -4,6 +4,8 @@
 
     import BasicCard from './components/BasicCard.svelte';
     import NavBar from './components/NavBar.svelte';
+    import Dropdown from './components/Dropdown.svelte';
+
 
 
     import Counter from './Counter.svelte';
@@ -28,9 +30,17 @@
     {
         "image_url" : "https://www.gamerevolution.com/assets/uploads/2018/04/Harry-Potter-Hogwarts-Mystery-1280x720.jpg",
         "image_alt" : "picture of hogwarts",
-        "image_location" : "Hogwarts",
+        "image_location" : "United Kingdom",
         "card_title" : "Hogwarts",
-        "card_price" : "£4384",
+        "card_price" : "£1,234",
+        "discounted" : true
+    },
+    {
+        "image_url" : "https://www.gamerevolution.com/assets/uploads/2018/04/Harry-Potter-Hogwarts-Mystery-1280x720.jpg",
+        "image_alt" : "picture of hogwarts",
+        "image_location" : "United Kingdom",
+        "card_title" : "Hogwarts",
+        "card_price" : "£1,234",
         "discounted" : true
     }
 ]
@@ -44,18 +54,25 @@
 
 
 <div class="antialiased text-gray-900">
+    
     <div class="bg-gray-800  text-white ">
      <NavBar show_menu={show_menu}/>
     </div>
 
+    <Dropdown/>
+
+    
+
 
     <div class="bg-gray-200 min-h-screen p-0  items-center justify-center">
 
+        {#if false}
         {#each destinations as destination}
             <div class='p-5'>
             <BasicCard destination={destination}/>
             </div>
         {/each}
+        {/if}
 
 
     </div>
