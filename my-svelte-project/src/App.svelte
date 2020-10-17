@@ -7,11 +7,15 @@
     import Dropdown from './components/Dropdown.svelte';
     import TemplateCard from './components/TemplateCard.svelte';
 
+    import Users from './components/Users.svelte'
+    import User from './components/User.svelte'
+
+
 
 
 
     import Counter from './Counter.svelte';
-import { dirty_components } from 'svelte/internal';
+    import { dirty_components } from 'svelte/internal';
 
     let destinations =  [
             {
@@ -53,19 +57,25 @@ import { dirty_components } from 'svelte/internal';
 
 </script>
 
-
+<div>
+    <Users/>
+</div>
 
 <div class="antialiased text-gray-900">
+
     
-    <div class="fixed w-full bg-gray-800 text-white flex justify-between">
+    <div class="hidden fixed w-full bg-gray-800 text-white  justify-between">
      <NavBar show_menu={show_menu}/>
      <Dropdown class='' />
     </div>
 
+    {#if false}
     <div class='py-16 px-4'>
             <TemplateCard/>
     </div>
+    {/if}
 
+    
 
 
     
