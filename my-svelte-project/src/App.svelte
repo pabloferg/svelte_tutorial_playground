@@ -7,15 +7,15 @@
     import Dropdown from './components/Dropdown.svelte';
     import TemplateCard from './components/TemplateCard.svelte';
 
-    import Users from './components/Users.svelte'
-    import User from './components/User.svelte'
+    //import Users from './components/Users.svelte'
+    //import User from './components/User.svelte'
 
-
-
+    //console.log(process.env.MI_NOMBRE)
+    //let nombre = process.env.MI_NOMBRE
 
 
     import Counter from './Counter.svelte';
-    import { dirty_components } from 'svelte/internal';
+    //import { dirty_components } from 'svelte/internal';
 
     let destinations =  [
             {
@@ -57,9 +57,9 @@
 
 </script>
 
-<div>
-    <Users/>
-</div>
+
+<div>hola!</div>
+
 
 <div class="antialiased text-gray-900">
 
@@ -69,7 +69,7 @@
      <Dropdown class='' />
     </div>
 
-    {#if false}
+    {#if true}
     <div class='py-16 px-4'>
             <TemplateCard/>
     </div>

@@ -6,7 +6,8 @@
     "build:tailwind": "postcss public/tailsind.css -o public/index.css",
     "build": "npm run build:tailwind && rollup -c",
     "dev": "concurrently \"rollup -c -w\" \"npm run watch:tailwind\"",
-    "start": "sirv public"
+    "start": "sirv public",
+    "postinstall": "npm install --prefix firebase"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",
